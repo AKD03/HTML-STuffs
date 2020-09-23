@@ -1,16 +1,23 @@
-function vowel_count(str1)
+function count_vowels(str) {
+    var list = 'aeiouAEIOU';
+    var count = 0;
+    var char_count = 0
+    //using match() method
+    var matching = str.match(/[aeiou]/g);
+    if(matching)
     {
-      var vowel = 'aeiouAEIOU';
-      var count1 = 0;
-      
-      for(var x = 0; x < str1.length ; x++)
-      {
-        if (vowel.indexOf(str1[x]) !== -1)
-        {
-          count1 += 1;
-        }
-      
-      } 
-      return count1;
+        console.log(`The string contains ${matching.length} vowels`)
     }
-    console.log(vowel_count("Betty bought some butter"));
+    else{
+        return -1;
+    }
+
+    for (var i = 0; i < str.length; i++) {
+        if (str.indexOf("B") !== -1) {
+            char_count++;
+        }
+    }
+    console.log("Count of the charachters in this string is: " + char_count)
+}
+
+count_vowels("Batty brought some butter");
