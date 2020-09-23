@@ -1,24 +1,24 @@
 Student.json----------------->
 
 [{
-    "name":"Ria",
+    "name":"Hari",
     "city":"Bangalore"
 
 },
 {
-    "name":"Dia",
+    "name":"Ram",
     "city":"Mysore"
 },
 {
-    "name":"Pia",
-    "city":"Kolkata"
+    "name":"Ashok",
+    "city":"Rajasthan"
 },
 {
-    "name":"Piu",
-    "city":"Mumbai"
+    "name":"Abhay",
+    "city":"Patna"
 },
 {
-    "name":"Sia",
+    "name":"Rahul",
     "city":"Hyderabad"
 }]
 
