@@ -3,28 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drop Down</title>
+    <title>Document</title>
+    <script>
+        function country(){
+            var name = document.getElementById("myList").value;
+            if(name == "America")
+            {
+                var countryName = ['California','Florida','Hawaii','Indiana'];
+                document.getElementById("display").innerHTML = countryName.join("<br>");
+            }
+            else if(name == "Australia")
+            {
+                var countryName = ['Northern Territory','South Australia', 'Western Australia', 'Victoria'];
+                document.getElementById("display").innerHTML = countryName.join("<br>");
+            }
+            else if(name == "India")
+            {
+                var countryName = ['Assam','Goa','Karnataka',' Meghalaya'];
+                document.getElementById("display").innerHTML = countryName.join("<br>");
+            }
+            else if(name == "Southkorea")
+            {
+                var countryName = ['Chungcheong','Gangwon','Jeju','Seoul'];
+                document.getElementById("display").innerHTML = countryName.join("<br>");
+            }
+            
+        }
+    </script>
 </head>
-<body>
-    <h1>Make Your Choice:</h1> 
-    <select id="ddlselect" onchange="action()";>
-        <option>--Select a product--</option>
-        <option value="LG,<br>Samsung,<br>Sony">Television</option>
-        <option value="Lenovo,<br>HP,<br>Dell,<br>Acer">Laptop</option>
-        <option value="Samsung,<br>Apple,<br>Oneplus">Mobile</option>
-        <option value="Samsung,<br>Microsoft,<br>Apple">Tablet</option>
-
+<body>   
+        <div>
+    Country <select name="list" id="myList" onchange="country()">
+        <option selected="" value="Default">--Select--</option>
+        <option value="America">America</option>
+        <option value="Australia">Australia</option>
+        <option value="India">India</option>
+        <option value="Southkorea">South korea</option>
     </select>
-    <p id="demo"></p>
-<script>
-    function action()
-    {
-        var e=document.getElementById("ddlselect");
-        var result=e.options[e.selectedIndex].value;
-        document.getElementById("demo").innerHTML = result;
-    }
-</script>    
     
-
+</div>
+<br>
+<div> <span id="display"></span></div>
 </body>
 </html>
