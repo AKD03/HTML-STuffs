@@ -1,0 +1,39 @@
+[
+    {
+        "name": "Presidency",
+        "city": "Delhi",
+        "type": "Veg",
+        "cuisine": ["Indian","Mexican","Chinese"]
+    },
+    {
+        "name": "Pind Baluchi",
+        "city": "Patna",
+        "type": "Veg",
+        "cuisine": ["Indian"]
+    },
+    {
+        "name": "Taj",
+        "city": "Bangalore",
+        "type": "Non-Veg",
+        "cuisine": ["Indian", "Chinese", "Arabian"]
+    },
+    {
+        "name": "Panache",
+        "city": "Hyderabad",
+        "type": "Non-Veg",
+        "cuisine": ["Italian", "Chinese","Mexican"]
+    },
+    {
+        "name": "Oberoi's",
+        "city": "Jaipur",
+        "type": "Non-Veg",
+        "cuisine": ["Arabian", "Chinese"]
+    },
+    {
+        "name": "Royal Inn",
+        "city": "Manali",
+        "type": "Veg",
+        "cuisine": ["Indian","French","Italian"]
+    }
+    
+]
